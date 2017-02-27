@@ -9,7 +9,6 @@ public:
 	HDC GetMemoryDC();
 private:
 	int DrawBackground(float);
-	int DrawPlane(float);
 	int LoadCImage();
 	int DeleteCImage();
 
@@ -29,9 +28,5 @@ private:
 	HBITMAP memoryBitmap;	  //초기화완료,딜리트 완료
 	HBITMAP oldBitmap;		  //초기화완료,딜리트 완료
 	CImage imgBG;
-	CImage imgPlane;
-	CImage imgPlaneMasking;
-	CImage imgEngineGlow;
-	CImage imgEngineGlowMasking;
 };
 

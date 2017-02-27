@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "Draw.h"
 #include "Loading.h"
-
 Draw::Draw(HWND phWnd)
 	: hWnd(phWnd)
 	, hDC(GetDC(hWnd))
@@ -44,25 +43,7 @@ int Draw::LoadCImage()
 	
 	imgBG.Load(temp);
 
-	wcscpy_s(temp, path);
-	wcscat_s(temp, Plane);
 
-	imgPlane.Load(temp);
-
-	wcscpy_s(temp, path);
-	wcscat_s(temp, PlaneMask);
-
-	imgPlaneMasking.Load(temp);
-
-	wcscpy_s(temp, path);
-	wcscat_s(temp, EngineGlow);
-
-	imgEngineGlow.Load(temp);
-
-	wcscpy_s(temp, path);
-	wcscat_s(temp, EngineGlowMask);
-
-	imgEngineGlowMasking.Load(temp);
 	
 	return 0;
 }
@@ -78,13 +59,13 @@ int Draw::DrawBackground(float dt)
 {
 	int dy = bgScrollSpeed*dt*60;
 
-	bgImageStartY = bgImageStartY + dy;
+	bgImageStartY = bgImageStartY - dy;
 	
 
 
-	if (bgImageStartY >= 800)
+	if (bgImageStartY < 0)
 	{
-		bgImageStartY = 0;
+		bgImageStartY = 800;
 	}
 	
 	bgImageEndY = bgImageStartY + 600;
@@ -132,53 +113,10 @@ int Draw::DrawBackground(float dt)
 	return 0;
 }
 
-int Draw::DrawPlane(float dt)
-{
-	imgPlaneMasking.BitBlt(memoryDC,
-		100,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCAND);
-
-	imgPlane.BitBlt(memoryDC,
-		100,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCPAINT);
-
-	imgEngineGlowMasking.BitBlt(memoryDC,
-		200,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCAND);
-
-	imgEngineGlow.BitBlt(memoryDC,
-		200,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCPAINT);
-
-
-	return 0;
-}
-
 int Draw::DrawHDC(float dt)
 {
 	DrawBackground(dt);
 	
-	DrawPlane(dt);
 
 	BitBlt(hDC, 0, 0, 800, 600, memoryDC,0,0, SRCCOPY);
 	return 0;

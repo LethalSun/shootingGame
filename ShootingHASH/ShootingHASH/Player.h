@@ -2,6 +2,7 @@
 class Player
 {
 private:
+
 	enum State
 	{
 		TOP = 1,
@@ -12,19 +13,54 @@ private:
 		SKILL1 = 32,
 		SKILL2 = 64
 	};
+
 public:
 	Player(HDC);
 	~Player();
 
+	int LoadCImage();
+
 	int setInputFlag(int);
-	int bitToState();
+
+	int Logic(float);
+	int MoveBy(int, int);
+	int MoveTo(int, int);
+	int GetPosition(int*, int*);
+
+	int Draw(float);
+
 private:
 	HDC memoryDC;
 	
 	int positionX;
 	int positionY;
+	int attackFlag;
+	int skill1Flag;
+	int skill2Flag;
 
-	int inputBitflag;
+	int inputBitFlag;
 
+	CImage imgPlane;
+	CImage imgPlaneMasking;
+	CImage imgEngineGlow;
+	CImage imgEngineGlowMasking;
+
+
+
+	int interpretInput();
+	
+	int Animation();
+
+	int SetDirectionByInput();
+	bool isTop();
+	bool isBottom();
+	bool isRight();
+	bool isLeft();
+	bool isXMax();
+	bool isXMin();
+	bool isYMax();
+	bool isYmin();
+
+	int SetActionFlagByInput();
 };
 

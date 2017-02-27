@@ -50,7 +50,7 @@ bool Clock::isOneFrame(float *dt)
 {
 	integralTime += GetElapsedTime();
 	*dt = integralTime;
-	if (integralTime >= 0.016666)
+	if (integralTime >= 0.016667)
 	{
 		integralTime = 0.f;
 		return true;
