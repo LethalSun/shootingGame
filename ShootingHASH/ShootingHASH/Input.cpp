@@ -4,12 +4,21 @@
 
 Input::Input()
 :byOldKey{0}
+, bitFlagInput{0}
 {
 }
 
 
 Input::~Input()
 {
+}
+
+int Input::GetInputFlag()
+{
+	GetKeyInput();
+	interpreteKeyInput();
+
+	return bitFlagInput;
 }
 
 int Input::GetKeyInput()
@@ -58,7 +67,7 @@ int Input::GetKeyInput()
 
 int Input::interpreteKeyInput()
 {
-	int bitFlagInput = 0;
+	bitFlagInput = 0;
 
 	if (byKey['C'] & HOLDKEY)
 	{

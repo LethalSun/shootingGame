@@ -1,8 +1,11 @@
 #include "pch.h"
 #include "GameClass.h"
-#include "Draw.h"
+#include "DeviceContextManager.h"
+#include "BackgroundClass.h"
 #include "Input.h"
 #include "Player.h"
+#include "PlayerClass.h"
+
 GameClass::GameClass(HWND phWnd)
 	:hWnd(phWnd)
 {
@@ -12,27 +15,47 @@ GameClass::GameClass(HWND phWnd)
 
 GameClass::~GameClass()
 {
-	//TODO: Drower 딜리트해주기
+	delete(DCManager);
 	
-}
-
-int GameClass::GetKeyboardInput()
-{
-	Player1->setInputFlag(KeyboardInput->GetKeyInput());
-	return 0;
 }
 
 int GameClass::Run(float dt)
 {
-	Drawer->DrawHDC(dt);
+	Logic();
+	Render(dt);
 	return 0;
 }
 
 int GameClass::init()
 {
-	Drawer = new Draw(hWnd);
-	KeyboardInput = new Input();
-	Player1 = new Player(Drawer->GetMemoryDC());
+	DCManager = new DeviceContextManager(hWnd);
 
+	keyboardInput = new Input();
+	
+	player = new PlayerClass(DCManager->GetMemoryDC(), vec2(325, 475),PlaneSpeed);
+	
+	player->LoadCImage(PartialPlane,PartialPlaneMask);
+	
+	bg = new BackgroundClass(DCManager->GetMemoryDC());
+	
+	return 0;
+}
+
+int GameClass::Logic()
+{
+	player->Logic(keyboardInput->GetInputFlag());
+
+	return 0;
+}
+
+int GameClass::Render(float dt)
+{
+
+	bg->Render(dt);
+
+	player->Render(dt);
+	
+	DCManager->DrawMemoryDCtoHDC();
+	
 	return 0;
 }

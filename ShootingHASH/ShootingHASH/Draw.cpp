@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Draw.h"
-#include "Loading.h"
+//#include "Loading.h"
 
 Draw::Draw(HWND phWnd)
 	: hWnd(phWnd)
@@ -45,22 +45,22 @@ int Draw::LoadCImage()
 	imgBG.Load(temp);
 
 	wcscpy_s(temp, path);
-	wcscat_s(temp, Plane);
+	wcscat_s(temp, PartialPlane);
 
 	imgPlane.Load(temp);
 
 	wcscpy_s(temp, path);
-	wcscat_s(temp, PlaneMask);
+	wcscat_s(temp, PartialPlaneMask);
 
 	imgPlaneMasking.Load(temp);
 
 	wcscpy_s(temp, path);
-	wcscat_s(temp, EngineGlow);
+	wcscat_s(temp, PartialEngineGlow);
 
 	imgEngineGlow.Load(temp);
 
 	wcscpy_s(temp, path);
-	wcscat_s(temp, EngineGlowMask);
+	wcscat_s(temp, PartialEngineGlowMask);
 
 	imgEngineGlowMasking.Load(temp);
 	
@@ -176,6 +176,8 @@ int Draw::DrawPlane(float dt)
 
 int Draw::DrawHDC(float dt)
 {
+
+	
 	DrawBackground(dt);
 	
 	DrawPlane(dt);
