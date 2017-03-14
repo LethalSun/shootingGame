@@ -5,3 +5,4 @@
 #include <atlimage.h>
 #include "Loading.h"
 #include "vec2.h"
+#include <vector>
