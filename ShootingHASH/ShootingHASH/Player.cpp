@@ -57,30 +57,30 @@ int Player::Draw(float)
 
 int Player::LoadCImage()
 {
-	WCHAR path[256];
-	GetCurrentDirectory(sizeof(path), path);
-
-	WCHAR temp[256];
-
-	wcscpy_s(temp, path);
-	wcscat_s(temp, Plane);
-
-	imgPlane.Load(temp);
-
-	wcscpy_s(temp, path);
-	wcscat_s(temp, PlaneMask);
-
-	imgPlaneMasking.Load(temp);
-
-	wcscpy_s(temp, path);
-	wcscat_s(temp, EngineGlow);
-
-	imgEngineGlow.Load(temp);
-
-	wcscpy_s(temp, path);
-	wcscat_s(temp, EngineGlowMask);
-
-	imgEngineGlowMasking.Load(temp);
+	//WCHAR path[256];
+	//GetCurrentDirectory(sizeof(path), path);
+	//
+	//WCHAR temp[256];
+	//
+	//wcscpy_s(temp, path);
+	//wcscat_s(temp, Plane);
+	//
+	//imgPlane.Load(temp);
+	//
+	//wcscpy_s(temp, path);
+	//wcscat_s(temp, PlaneMask);
+	//
+	//imgPlaneMasking.Load(temp);
+	//
+	//wcscpy_s(temp, path);
+	//wcscat_s(temp, EngineGlow);
+	//
+	//imgEngineGlow.Load(temp);
+	//
+	//wcscpy_s(temp, path);
+	//wcscat_s(temp, EngineGlowMask);
+	//
+	//imgEngineGlowMasking.Load(temp);
 	return 0;
 }
 
@@ -94,44 +94,44 @@ int Player::interpretInput()
 
 int Player::Animation()
 {
-	imgPlaneMasking.BitBlt(memoryDC,
-		100,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCAND);
-
-	imgPlane.BitBlt(memoryDC,
-		100,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCPAINT);
-
-	imgEngineGlowMasking.BitBlt(memoryDC,
-		200,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCAND);
-
-	imgEngineGlow.BitBlt(memoryDC,
-		200,
-		100,
-		150,
-		125,
-		0,
-		0,
-		SRCPAINT);
-
-
-	return 0;
+	//imgPlaneMasking.BitBlt(memoryDC,
+	//	100,
+	//	100,
+	//	150,
+	//	125,
+	//	0,
+	//	0,
+	//	SRCAND);
+	//
+	//imgPlane.BitBlt(memoryDC,
+	//	100,
+	//	100,
+	//	150,
+	//	125,
+	//	0,
+	//	0,
+	//	SRCPAINT);
+	//
+	//imgEngineGlowMasking.BitBlt(memoryDC,
+	//	200,
+	//	100,
+	//	150,
+	//	125,
+	//	0,
+	//	0,
+	//	SRCAND);
+	//
+	//imgEngineGlow.BitBlt(memoryDC,
+	//	200,
+	//	100,
+	//	150,
+	//	125,
+	//	0,
+	//	0,
+	//	SRCPAINT);
+	//
+	//
+	//return 0;
 	return 0;
 }
 
