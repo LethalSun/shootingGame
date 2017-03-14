@@ -1,7 +1,14 @@
 #pragma once
-class Draw;
+
+//NEW CLASS
+class DeviceContextManager;
 class Input;
+class BackgroundClass;
+class PlayerClass;
+
+//OLDCLASS
 class Player;
+
 class GameClass
 {
 public:
@@ -9,15 +16,22 @@ public:
 	GameClass(HWND);
 	~GameClass();
 
-	int GetKeyboardInput();
-	int Logic();
 	int Run(float);
 private:
-	int init();
+	//member
+	DeviceContextManager* DCManager;
+	
+	BackgroundClass* bg;
 
-	Input* KeyboardInput;
-	Player* Player1;
-	Draw* Drawer;
+	Input* keyboardInput;
+	
+	PlayerClass* player;
+	
 	HWND hWnd;
+
+	//method
+	int init();
+	int Logic();
+	int Render(float);
 };
 

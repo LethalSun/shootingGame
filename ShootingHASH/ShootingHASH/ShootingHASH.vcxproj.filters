@@ -16,6 +16,12 @@
     <Filter Include="PreCompiledHeader">
       <UniqueIdentifier>{f0f3f8dc-b386-4a72-9029-99c16a5fc244}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PlayerState">
+      <UniqueIdentifier>{7134b2fc-e2f9-46b4-b30d-16edcc01d40c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OldFile">
+      <UniqueIdentifier>{b34a812e-e8ff-493e-b004-4d4a16f7e9dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,13 +45,70 @@
     <ClCompile Include="Input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameLogic.cpp">
+    <ClCompile Include="DeviceContextManager.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vec2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMoveTop.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerChageRight.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMoveRight.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMoveBottom.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerChangeLeft.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMoveLeft.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStopMove.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerChangeMovement.cpp">
+      <Filter>OldFile</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStopMovement.cpp">
+      <Filter>OldFile</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerXDirectionMovement.cpp">
+      <Filter>OldFile</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerYDirectionMovement.cpp">
+      <Filter>OldFile</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerState.cpp">
+      <Filter>PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>OldFile</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectClass.cpp">
+      <Filter>OldFile</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
+      <Filter>OldFile</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectileClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Background.cpp">
+    <ClCompile Include="NpcManagerClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -54,9 +117,6 @@
       <Filter>PreCompiledHeader</Filter>
     </ClInclude>
     <ClInclude Include="GameClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Draw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Clock.h">
@@ -68,13 +128,73 @@
     <ClInclude Include="Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameLogic.h">
+    <ClInclude Include="DeviceContextManager.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerState.h">
+      <Filter>PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMoveTop.h">
+      <Filter>PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerChageRight.h">
+      <Filter>PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMoveRight.h">
+      <Filter>PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMoveBottom.h">
+      <Filter>PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerChangeLeft.h">
+      <Filter>PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMoveLeft.h">
+      <Filter>PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStopMove.h">
+      <Filter>PlayerState</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectClass.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerChangeMovement.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStopMovement.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerXDirectionMovement.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerYDirectionMovement.h">
+      <Filter>OldFile</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectileClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Background.h">
+    <ClInclude Include="NpcManagerClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

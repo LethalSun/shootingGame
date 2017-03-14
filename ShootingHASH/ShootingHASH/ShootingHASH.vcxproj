@@ -103,8 +103,8 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -148,30 +148,68 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="BackgroundClass.cpp" />
     <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="DeviceContextManager.cpp" />
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="GameClass.cpp" />
     <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="GameObjectClass.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Loading.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NpcManagerClass.cpp" />
+    <ClCompile Include="ObjectClass.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerChageRight.cpp" />
+    <ClCompile Include="PlayerChangeLeft.cpp" />
+    <ClCompile Include="PlayerChangeMovement.cpp" />
+    <ClCompile Include="PlayerClass.cpp" />
+    <ClCompile Include="PlayerMoveBottom.cpp" />
+    <ClCompile Include="PlayerMoveLeft.cpp" />
+    <ClCompile Include="PlayerMoveRight.cpp" />
+    <ClCompile Include="PlayerMoveTop.cpp" />
+    <ClCompile Include="PlayerState.cpp" />
+    <ClCompile Include="PlayerStopMove.cpp" />
+    <ClCompile Include="PlayerStopMovement.cpp" />
+    <ClCompile Include="PlayerXDirectionMovement.cpp" />
+    <ClCompile Include="PlayerYDirectionMovement.cpp" />
+    <ClCompile Include="ProjectileClass.cpp" />
+    <ClCompile Include="vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Background.h" />
+    <ClInclude Include="BackgroundClass.h" />
     <ClInclude Include="Clock.h" />
+    <ClInclude Include="DeviceContextManager.h" />
     <ClInclude Include="Draw.h" />
     <ClInclude Include="GameClass.h" />
     <ClInclude Include="GameLogic.h" />
+    <ClInclude Include="GameObjectClass.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Loading.h" />
+    <ClInclude Include="NpcManagerClass.h" />
+    <ClInclude Include="ObjectClass.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerChageRight.h" />
+    <ClInclude Include="PlayerChangeLeft.h" />
+    <ClInclude Include="PlayerChangeMovement.h" />
+    <ClInclude Include="PlayerClass.h" />
+    <ClInclude Include="PlayerMoveBottom.h" />
+    <ClInclude Include="PlayerMoveLeft.h" />
+    <ClInclude Include="PlayerMoveRight.h" />
+    <ClInclude Include="PlayerMoveTop.h" />
+    <ClInclude Include="PlayerState.h" />
+    <ClInclude Include="PlayerStopMove.h" />
+    <ClInclude Include="PlayerStopMovement.h" />
+    <ClInclude Include="PlayerXDirectionMovement.h" />
+    <ClInclude Include="PlayerYDirectionMovement.h" />
+    <ClInclude Include="ProjectileClass.h" />
+    <ClInclude Include="vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Draw.h"
 #include "Loading.h"
+
 Draw::Draw(HWND phWnd)
 	: hWnd(phWnd)
 	, hDC(GetDC(hWnd))
@@ -42,8 +43,6 @@ int Draw::LoadCImage()
 	wcscat_s(temp, PartialBG);
 	
 	imgBG.Load(temp);
-
-
 	
 	return 0;
 }
@@ -115,6 +114,8 @@ int Draw::DrawBackground(float dt)
 
 int Draw::DrawHDC(float dt)
 {
+
+	
 	DrawBackground(dt);
 	
 

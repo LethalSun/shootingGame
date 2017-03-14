@@ -52,12 +52,17 @@ public:
 	Input();
 	~Input();
 
-	int GetKeyInput();
-
-	int interpreteKeyInput();
+	int GetInputFlag();
 
 private:
+	//member
+	int bitFlagInput;
 	BYTE	byOldKey[256];
 	BYTE	byKey[256];
+
+	//method
+	int GetKeyInput();
+	int interpreteKeyInput();
+
 
 };

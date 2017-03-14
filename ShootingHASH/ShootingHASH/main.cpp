@@ -73,7 +73,6 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	MSG			msg;
 
 	//TODO: //NOT init GameClass
-	//TODO: 왜 값복사가 일어나는데 값이 같지?
 	GameClass gameManager(hWnd);
 
 	//deltatime
