@@ -12,6 +12,7 @@
 #include "PlayerMoveRight.h"
 #include "PlayerMoveTop.h"
 #include "PlayerStopMove.h"
+#include "GunClass.h"
 
 PlayerClass::PlayerClass(HDC phDC, vec2 pVec2,float pSpeed)
 	:GameObjectClass{ phDC ,pVec2 }
@@ -23,7 +24,7 @@ PlayerClass::PlayerClass(HDC phDC, vec2 pVec2,float pSpeed)
 	, isLeft(false)
 {
 	state = new PlayerStopMove();
-	tempAniamtionFrameCount = 0;
+	gun = new GunClass(phDC, PlaneSpeed);
 }
 
 
@@ -42,6 +43,7 @@ int PlayerClass::Render(float dt)
 	vec2 pos = GetPosition();
 	pos += dPosition;
 	BitBlt(imgStart, imgEnd, pos,isLeft);
+	gun->Render(dt);
 	return 0;
 }
 
@@ -51,6 +53,8 @@ int PlayerClass::Logic(int pInputBitFlag)
 	HandleInput();
 	StateUpdate();
 	CalculateNextPosition();
+	gun->Logic(int(0));
+
 	return 0;
 }
 
@@ -132,35 +136,9 @@ int PlayerClass::StateUpdate()
 	return 0;
 }
 
-int PlayerClass::Animation(vec2 &pImgStartpos, vec2 &pImgEndPos)
+int PlayerClass::CheckActionFlag()
 {
-	 
-	int ani = 2;
-	int framepos0[4]{ 1,153,305,457 };
-	int framepos1[4]{ 457,609,761,913 };
-	int framepos2[4]{ 913,1065,1217,1369 };
-
-	tempAniamtionFrameCount = tempAniamtionFrameCount % 4;
-	if (ani == 0)
-	{
-		pImgStartpos = vec2((float)framepos0[tempAniamtionFrameCount], 1.f);
-		pImgEndPos = vec2(150.f, 125.f);
-		++tempAniamtionFrameCount;
-	}
-
-	if (ani == 1)
-	{
-		pImgStartpos = vec2((float)framepos1[tempAniamtionFrameCount], 1.f);
-		pImgEndPos = vec2(150.f, 125.f);
-		++tempAniamtionFrameCount;
-	}
-
-	if (ani == 2)
-	{
-		pImgStartpos = vec2((float)framepos2[tempAniamtionFrameCount], 1.f);
-		pImgEndPos = vec2(150.f, 125.f);
-		++tempAniamtionFrameCount;
-	}
+	action = inputFlag & int(112);
 
 	return 0;
 }

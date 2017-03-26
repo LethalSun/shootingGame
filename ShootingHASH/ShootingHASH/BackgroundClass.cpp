@@ -81,7 +81,6 @@ int BackgroundClass::Render(float dt)
 			, 0
 			, SRCCOPY
 		);
-
 	}
 
 

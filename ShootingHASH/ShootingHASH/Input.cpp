@@ -74,12 +74,12 @@ int Input::interpreteKeyInput()
 		bitFlagInput += ATTACK;
 		// C°¡ ´­·È´Ù¸é
 	}
-	if (byKey['X'] & PUSHKEY)
+	else if (byKey['X'] & PUSHKEY)
 	{
 		bitFlagInput += SKILL1;
 		// Z °¡ ´­·È´Ù¸é
 	}
-	if (byKey['Z'] & PUSHKEY)
+	else if (byKey['Z'] & PUSHKEY)
 	{
 		bitFlagInput += SKILL2;
 		// Z¸¦ ´­·¶´Ù°¡ ¶ç¾úÀ»¶§

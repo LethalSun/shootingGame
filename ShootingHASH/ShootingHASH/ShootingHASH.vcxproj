@@ -150,11 +150,13 @@
   <ItemGroup>
     <ClCompile Include="BackgroundClass.cpp" />
     <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="CollideManager.cpp" />
     <ClCompile Include="DeviceContextManager.cpp" />
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="GameClass.cpp" />
     <ClCompile Include="GameLogic.cpp" />
     <ClCompile Include="GameObjectClass.cpp" />
+    <ClCompile Include="GunClass.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Loading.cpp" />
     <ClCompile Include="main.cpp" />
@@ -184,11 +186,13 @@
   <ItemGroup>
     <ClInclude Include="BackgroundClass.h" />
     <ClInclude Include="Clock.h" />
+    <ClInclude Include="CollideManager.h" />
     <ClInclude Include="DeviceContextManager.h" />
     <ClInclude Include="Draw.h" />
     <ClInclude Include="GameClass.h" />
     <ClInclude Include="GameLogic.h" />
     <ClInclude Include="GameObjectClass.h" />
+    <ClInclude Include="GunClass.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Loading.h" />
     <ClInclude Include="NpcManagerClass.h" />

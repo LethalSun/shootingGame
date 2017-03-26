@@ -2,6 +2,7 @@
 #include "GameObjectClass.h"
 
 class PlayerState;
+class GunClass;
 
 class PlayerClass :public GameObjectClass
 {
@@ -28,9 +29,6 @@ public:
 	virtual int Render(float);
 	virtual int Logic(int);
 
-	//TODO: temporary animation
-	int Animation(vec2 &, vec2 &);
-
 	int SetAnimationVec(vec2,bool);
 private:
 
@@ -44,19 +42,21 @@ private:
 	//for Logic Method
 	int TakeInputFlag(int);
 	int CalculateNextPosition();
+
 	//int identifyNextAction();
 	int HandleInput();
 	int StateUpdate();
 
 	//for Render Method
 
-	//TODO: temporary animation
-	int tempAniamtionFrameCount;
-
 	vec2 imgStart;
 	vec2 imgEnd;
 	bool isLeft;
 	PlayerState* state;
 
+	// Gun
+	int CheckActionFlag();
+	int action;
+	GunClass* gun;
 };
 
