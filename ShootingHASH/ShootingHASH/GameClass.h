@@ -5,7 +5,7 @@ class DeviceContextManager;
 class Input;
 class BackgroundClass;
 class PlayerClass;
-
+class UIManagerClass;
 //OLDCLASS
 class Player;
 
@@ -26,6 +26,8 @@ private:
 	Input* keyboardInput;
 	
 	PlayerClass* player;
+
+	UIManagerClass* UI;
 	
 	HWND hWnd;
 

@@ -20,11 +20,11 @@ PlayerClass::PlayerClass(HDC phDC, vec2 pVec2,float pSpeed)
 	, OxF(15)
 	, dPosition()
 	, planeSpeed{pSpeed}
-	, imgEnd{ 150.f,125.f }
+	, imgEnd{ PlayerPlaneFrameEndPoint[0],PlayerPlaneFrameEndPoint[1] }
 	, isLeft(false)
 {
 	state = new PlayerStopMove();
-	gun = new GunClass(phDC, PlaneSpeed);
+	gun = new GunClass(phDC, BulletSpeed);
 }
 
 
@@ -40,19 +40,26 @@ int PlayerClass::TakeInputFlag(int pInputFlag)
 
 int PlayerClass::Render(float dt)
 {
+	gun->Render(dt);
 	vec2 pos = GetPosition();
 	pos += dPosition;
 	BitBlt(imgStart, imgEnd, pos,isLeft);
-	gun->Render(dt);
+
 	return 0;
 }
 
 int PlayerClass::Logic(int pInputBitFlag)
 {
 	TakeInputFlag(pInputBitFlag);
+	
 	HandleInput();
+	
 	StateUpdate();
+	
 	CalculateNextPosition();
+
+	CheckActionFlag();
+
 	gun->Logic(int(0));
 
 	return 0;
@@ -139,6 +146,27 @@ int PlayerClass::StateUpdate()
 int PlayerClass::CheckActionFlag()
 {
 	action = inputFlag & int(112);
+
+	switch (action)
+	{
+		case State::ATTACK:
+		{
+			gun->Shot(GetPosition() + 
+				vec2{ ProjectileMarginForPlayerPlane[0]
+				,ProjectileMarginForPlayerPlane[1] });
+			break;
+		}
+		case State::SKILL1:
+		{
+			break;
+		}
+		case State::SKILL2:
+		{
+			break;
+		}
+		default:
+			break;
+	}
 
 	return 0;
 }

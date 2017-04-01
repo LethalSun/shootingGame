@@ -1,0 +1,48 @@
+{"frames": [
+
+{
+	"filename": "Bullet_Level_0.png",
+	"frame": {"x":1,"y":1,"w":23,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":49},
+	"sourceSize": {"w":23,"h":49},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Bullet_Level_1.png",
+	"frame": {"x":26,"y":1,"w":31,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":53},
+	"sourceSize": {"w":31,"h":53},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Bullet_Level_2.png",
+	"frame": {"x":1,"y":56,"w":40,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":57},
+	"sourceSize": {"w":40,"h":57},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Bullet_Level_3.png",
+	"frame": {"x":1,"y":115,"w":50,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":65},
+	"sourceSize": {"w":50,"h":65},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ProjectilePlayerHalf.png",
+	"format": "RGBA8888",
+	"size": {"w":58,"h":181},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:9331fa8f14f22586672cadc199f53ec0:7f1b318609b074721c099dea48b3e9d7:032154f1dac41ec780462485b500943f$"
+}
+}

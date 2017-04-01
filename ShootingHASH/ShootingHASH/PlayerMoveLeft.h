@@ -9,7 +9,7 @@ public:
 	virtual PlayerState* HandleInput(PlayerClass& pPlayer, int pInput);
 	virtual void update(PlayerClass& pPlayer);
 private:
-	const int framePoint[4]{ 913,1065,1217,1369 };
+	const int framePoint[4]{ PlayerPlaneFramePoint[6],PlayerPlaneFramePoint[7],PlayerPlaneFramePoint[8],PlayerPlaneFramePoint[9] };
 	int frameCount;
 };
 

@@ -6,7 +6,7 @@ public:
 	virtual ~GameObjectClass();
 	int LoadCImage(const WCHAR * pPartialImgPath, const WCHAR * pPartialMaskingPath);
 
-	int BitBlt(vec2 pImgStart, vec2 pImgEnd, vec2 pPosition, bool isLeft);
+	int BitBlt(vec2 pImgStart, vec2 dXdY, vec2 pPosition, bool isLeft);
 
 	int MoveTo(vec2);
 	int MoveBy(vec2);

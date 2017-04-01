@@ -153,6 +153,7 @@
     <ClCompile Include="CollideManager.cpp" />
     <ClCompile Include="DeviceContextManager.cpp" />
     <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="EffectManagerClass.cpp" />
     <ClCompile Include="GameClass.cpp" />
     <ClCompile Include="GameLogic.cpp" />
     <ClCompile Include="GameObjectClass.cpp" />
@@ -181,6 +182,7 @@
     <ClCompile Include="PlayerXDirectionMovement.cpp" />
     <ClCompile Include="PlayerYDirectionMovement.cpp" />
     <ClCompile Include="ProjectileClass.cpp" />
+    <ClCompile Include="UIManagerClass.cpp" />
     <ClCompile Include="vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +191,7 @@
     <ClInclude Include="CollideManager.h" />
     <ClInclude Include="DeviceContextManager.h" />
     <ClInclude Include="Draw.h" />
+    <ClInclude Include="EffectManagerClass.h" />
     <ClInclude Include="GameClass.h" />
     <ClInclude Include="GameLogic.h" />
     <ClInclude Include="GameObjectClass.h" />
@@ -213,6 +216,7 @@
     <ClInclude Include="PlayerXDirectionMovement.h" />
     <ClInclude Include="PlayerYDirectionMovement.h" />
     <ClInclude Include="ProjectileClass.h" />
+    <ClInclude Include="UIManagerClass.h" />
     <ClInclude Include="vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

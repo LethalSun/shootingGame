@@ -7,6 +7,7 @@ public:
 	ProjectileClass(HDC pHDC, vec2 pPos, bool);
 	~ProjectileClass();
 
+	int init(vec2);
 	virtual int Render(float);
 	virtual int Logic(int);
 

@@ -4,7 +4,7 @@
 
 ProjectileClass::ProjectileClass(HDC pHDC, vec2 pPos, bool pIsFromPlayer)
 	:GameObjectClass(pHDC, pPos)
-	,isDead(false)
+	,isDead(true)
 	,isFromPlayer(pIsFromPlayer)
 	, dPosition{0.f,-1.0f}
 {
@@ -13,6 +13,12 @@ ProjectileClass::ProjectileClass(HDC pHDC, vec2 pPos, bool pIsFromPlayer)
 
 ProjectileClass::~ProjectileClass()
 {
+}
+
+int ProjectileClass::init(vec2 pStartPos)
+{
+	SetPosition(pStartPos);
+	return 0;
 }
 
 int ProjectileClass::Render(float dt)
@@ -35,6 +41,7 @@ int ProjectileClass::Logic(int param)
 	auto tempPos = GetPosition();
 	tempPos = tempPos + dPosition * projectileSpeed;
 	SetPosition(tempPos);
+	CheckIsDead();
 	return 0;
 }
 
@@ -72,13 +79,13 @@ int ProjectileClass::CheckIsDead()
 {
 	vec2 position = GetPosition();
 
-	if(position.x >= 700 && position.x<=0)
+	if(position.x >= 700 || position.x<=0)
 	{
 		isDead = true;
 		return 0;
 	}
 
-	if (position.y <= 0 && position.y >= 600)
+	if (position.y <= 0 || position.y >= 600)
 	{
 		isDead = true;
 		return 0;

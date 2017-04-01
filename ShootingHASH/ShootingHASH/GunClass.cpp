@@ -5,6 +5,7 @@
 GunClass::GunClass(HDC phDC, float pBulletSpeed)
 	:hDC{phDC}
 	,bulletSpeed{pBulletSpeed}
+	, countForDelay{0}
 {
 	MakeBullet();
 }
@@ -16,6 +17,11 @@ GunClass::~GunClass()
 
 int GunClass::Shot(vec2 pPos)
 {
+	if (countForDelay != 0)
+	{
+		return 1;
+	}
+
 	for (auto available : bullets)
 	{
 		if (available->IsDead() == true)
@@ -48,6 +54,10 @@ int GunClass::Render(float dt)
 
 int GunClass::Logic(int pInt)
 {
+	
+	++countForDelay;
+	countForDelay %= 10;
+
 	for (auto available : bullets)
 	{
 		available->Logic(pInt);
@@ -62,7 +72,7 @@ int GunClass::MakeBullet()
 	{
 		auto tempBullet = new ProjectileClass(hDC, vec2{800,600},true);
 		tempBullet->LoadCImage(PartialPlayerProjectile, PartialPlayerProjectileMasking);
-		tempBullet->SetAnimationVec(vec2{ 1,1 }, vec2{ 45,98 });
+		tempBullet->SetAnimationVec(vec2{ ProjectileFramePoint[0],ProjectileFramePoint[1] }, vec2{ ProjectileFramePoint[2],ProjectileFramePoint[3] });
 		bullets.push_back(tempBullet);
 	}
 

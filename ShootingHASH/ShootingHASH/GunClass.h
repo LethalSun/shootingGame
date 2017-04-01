@@ -17,6 +17,8 @@ private:
 
 	float bulletSpeed;
 
+	int countForDelay;
+
 	int MakeBullet();
 	int CheckBullets();
 	std::vector<ProjectileClass*> bullets;

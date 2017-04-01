@@ -1,0 +1,57 @@
+{"frames": [
+
+{
+	"filename": "BarBlackBack.png",
+	"frame": {"x":1,"y":1,"w":34,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":300},
+	"sourceSize": {"w":34,"h":300},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "BarBlood.png",
+	"frame": {"x":37,"y":1,"w":34,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":300},
+	"sourceSize": {"w":34,"h":300},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "BarOne.png",
+	"frame": {"x":73,"y":1,"w":34,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":300},
+	"sourceSize": {"w":34,"h":300},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "BarZero.png",
+	"frame": {"x":109,"y":1,"w":34,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":34,"h":300},
+	"sourceSize": {"w":34,"h":300},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "UIBackground.png",
+	"frame": {"x":1,"y":303,"w":120,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":600},
+	"sourceSize": {"w":120,"h":600},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "UI.png",
+	"format": "RGBA8888",
+	"size": {"w":144,"h":904},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b38ad18687e02e699c60a5c58226c2bd:d51d53246b189525beb7ff141bf29c7b:4b774b923918ecd961888279dba3ffad$"
+}
+}

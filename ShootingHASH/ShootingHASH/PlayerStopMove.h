@@ -11,6 +11,6 @@ public:
 
 private:
 	int frameCount;
-	int framePoint[4]{ 1,153,305,457 };
+	int framePoint[4]{ PlayerPlaneFramePoint[0],PlayerPlaneFramePoint[1],PlayerPlaneFramePoint[2],PlayerPlaneFramePoint[3] };
 };
 

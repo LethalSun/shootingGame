@@ -61,15 +61,15 @@ int GameObjectClass::BitBlt(vec2 pImgStart, vec2 pImgEnd, vec2 pPosition, bool i
 	}
 	else
 	{
-		vec2 newImgStart = vec2(pImgStart.x + 150.f, pImgStart.y);
+		vec2 newImgStart = vec2(pImgStart.x + PlayerPlaneFrameEndPoint[0], pImgStart.y);
 		vec2 newImgEnd = vec2(-pImgEnd.x, pImgEnd.y);
 
 		objectMaskingImg.StretchBlt
 		(memoryDC
 			, (int)pPosition.x
 			, (int)pPosition.y
-			, 150
-			, 125
+			, PlayerPlaneFrameEndPoint[0]
+			, PlayerPlaneFrameEndPoint[1]
 			, (int)newImgStart.x
 			, (int)newImgStart.y
 			, (int)newImgEnd.x
@@ -81,8 +81,8 @@ int GameObjectClass::BitBlt(vec2 pImgStart, vec2 pImgEnd, vec2 pPosition, bool i
 		(memoryDC
 			, (int)pPosition.x
 			, (int)pPosition.y
-			, 150
-			, 125
+			, PlayerPlaneFrameEndPoint[0]
+			, PlayerPlaneFrameEndPoint[1]
 			, (int)newImgStart.x
 			, (int)newImgStart.y
 			, (int)newImgEnd.x
