@@ -6,6 +6,7 @@ class Input;
 class BackgroundClass;
 class PlayerClass;
 class UIManagerClass;
+class EnemyClass;
 //OLDCLASS
 class Player;
 
@@ -28,6 +29,8 @@ private:
 	PlayerClass* player;
 
 	UIManagerClass* UI;
+
+	std::array<EnemyClass*, 100> enemyArray;
 	
 	HWND hWnd;
 
@@ -35,5 +38,7 @@ private:
 	int init();
 	int Logic();
 	int Render(float);
+	int Delete();
+	int SetEnemyArray();
 };
 

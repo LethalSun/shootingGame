@@ -54,7 +54,7 @@ int GunClass::Render(float dt)
 
 int GunClass::Logic(int pInt)
 {
-	
+	//TODO: √— µÙ∑π¿Ã
 	++countForDelay;
 	countForDelay %= 10;
 

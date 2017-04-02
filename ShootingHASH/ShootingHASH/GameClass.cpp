@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "PlayerClass.h"
 #include "UIManagerClass.h"
+#include "EnemyClass.h"
 
 GameClass::GameClass(HWND phWnd)
 	:hWnd(phWnd)
@@ -43,6 +44,8 @@ int GameClass::init()
 
 	UI->LoadCImage(PartialUi, PartialUiMasking);
 	
+	SetEnemyArray();
+
 	return 0;
 }
 
@@ -67,5 +70,20 @@ int GameClass::Render(float dt)
 	DCManager->DrawMemoryDCtoHDC();
 
 	
+	return 0;
+}
+
+int GameClass::Delete()
+{
+	delete(UI);
+	delete(bg);
+	delete(player);
+	delete(keyboardInput);
+	delete(DCManager);
+	return 0;
+}
+
+int GameClass::SetEnemyArray()
+{
 	return 0;
 }
