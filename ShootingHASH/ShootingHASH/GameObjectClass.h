@@ -27,6 +27,7 @@ private:
 	CImage objectMaskingImg;
 
 	vec2 position;
+	//TODO:  체력을 각각 관리하게 하는게...
 	float HP;
 
 };

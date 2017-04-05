@@ -7,6 +7,8 @@ class BackgroundClass;
 class PlayerClass;
 class UIManagerClass;
 class EnemyClass;
+class EnemyManagerClass;
+class CollideManager;
 //OLDCLASS
 class Player;
 
@@ -30,7 +32,11 @@ private:
 
 	UIManagerClass* UI;
 
-	std::array<EnemyClass*, 100> enemyArray;
+	EnemyClass* tempEnemy;
+
+	EnemyManagerClass* enemyManager;
+
+	CollideManager* collide;
 	
 	HWND hWnd;
 

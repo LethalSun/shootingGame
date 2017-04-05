@@ -6,5 +6,7 @@ class EffectManagerClass :
 public:
 	EffectManagerClass(HDC phDC, vec2 pVec2, float pSpeed);
 	~EffectManagerClass();
+
+
 };
 

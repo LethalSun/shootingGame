@@ -1,0 +1,48 @@
+{"frames": [
+
+{
+	"filename": "Heavy_Ship_Merged.png",
+	"frame": {"x":1,"y":1,"w":155,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":141},
+	"sourceSize": {"w":155,"h":141},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Medium_Ship_Core.png",
+	"frame": {"x":1,"y":144,"w":100,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":87},
+	"sourceSize": {"w":100,"h":87},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Small_Ship_270_Degrees.png",
+	"frame": {"x":103,"y":144,"w":48,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":48,"h":45},
+	"sourceSize": {"w":48,"h":45},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Spider_Turret_Walking_Frame_3.png",
+	"frame": {"x":153,"y":144,"w":38,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":37},
+	"sourceSize": {"w":38,"h":37},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "EnemiesImage.png",
+	"format": "RGBA8888",
+	"size": {"w":192,"h":232},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:f9869871bef963eedf716913f70c82c6:43406b3e2ad0edf32ead2376374e30cc:4a04e3bfea1ca7d0ffd3e6260fc0d1b7$"
+}
+}

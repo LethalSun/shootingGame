@@ -24,7 +24,8 @@ PlayerClass::PlayerClass(HDC phDC, vec2 pVec2,float pSpeed)
 	, isLeft(false)
 {
 	state = new PlayerStopMove();
-	gun = new GunClass(phDC, BulletSpeed);
+	gun = new GunClass(phDC, BulletSpeed, vec2{0.f,-1.f},true);
+	gun->SetCollideRadius(PlayerBulletRadius[1]);
 }
 
 
@@ -50,6 +51,9 @@ int PlayerClass::Render(float dt)
 
 int PlayerClass::Logic(int pInputBitFlag)
 {
+	//TODO: Á×À¸¸é ÀÌÆåÆ®,±×¸®°í ¾ÀÀüÈ¯.
+	CheckIsDead();
+
 	TakeInputFlag(pInputBitFlag);
 	
 	HandleInput();
@@ -125,6 +129,15 @@ int PlayerClass::CalculateNextPosition()
 	return 0;
 }
 
+int PlayerClass::CheckIsDead()
+{
+	if (hp < 0)
+	{
+		isDead = true;
+	}
+	return 0;
+}
+
 int PlayerClass::HandleInput()
 {
 	PlayerState* pTempState = state->HandleInput(*this, direction);
@@ -175,5 +188,37 @@ int PlayerClass::SetAnimationVec(vec2 pPos ,bool pIsleft)
 {
 	imgStart = pPos;
 	isLeft = pIsleft;
+	return 0;
+}
+
+std::vector<ProjectileClass*>* PlayerClass::GetBulletVector()
+{
+	return gun->GetBulletVector();
+}
+
+int PlayerClass::GetCollideRadius()
+{
+	return collideRadius;
+}
+
+int PlayerClass::SetIsDead()
+{
+	isDead = true;
+	return 0;
+}
+
+int PlayerClass::GetMaxHp()
+{
+	return maxHp;
+}
+
+int PlayerClass::GetHp()
+{
+	return hp;
+}
+
+int PlayerClass::SetHp(int pHp)
+{
+	hp = pHp;
 	return 0;
 }

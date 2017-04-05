@@ -155,6 +155,8 @@
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="EffectManagerClass.cpp" />
     <ClCompile Include="EnemyClass.cpp" />
+    <ClCompile Include="EnemyManagerClass.cpp" />
+    <ClCompile Include="EnemyShipClass.cpp" />
     <ClCompile Include="GameClass.cpp" />
     <ClCompile Include="GameLogic.cpp" />
     <ClCompile Include="GameObjectClass.cpp" />
@@ -194,6 +196,8 @@
     <ClInclude Include="Draw.h" />
     <ClInclude Include="EffectManagerClass.h" />
     <ClInclude Include="EnemyClass.h" />
+    <ClInclude Include="EnemyManagerClass.h" />
+    <ClInclude Include="EnemyShipClass.h" />
     <ClInclude Include="GameClass.h" />
     <ClInclude Include="GameLogic.h" />
     <ClInclude Include="GameObjectClass.h" />

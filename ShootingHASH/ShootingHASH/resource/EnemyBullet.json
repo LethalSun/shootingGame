@@ -1,0 +1,111 @@
+{"frames": [
+
+{
+	"filename": "Diamond_Shot_Blue90.png",
+	"frame": {"x":1,"y":1,"w":18,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":28},
+	"sourceSize": {"w":18,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Diamond_Shot_Red90.png",
+	"frame": {"x":21,"y":1,"w":18,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":28},
+	"sourceSize": {"w":18,"h":28},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Flower_Blue_Frame_1.png",
+	"frame": {"x":41,"y":1,"w":22,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+	"sourceSize": {"w":22,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Flower_Orange_Frame_1.png",
+	"frame": {"x":1,"y":31,"w":22,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+	"sourceSize": {"w":22,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Flower_Purple_Frame_1.png",
+	"frame": {"x":25,"y":31,"w":22,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+	"sourceSize": {"w":22,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Medium_Shot.png",
+	"frame": {"x":1,"y":55,"w":22,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+	"sourceSize": {"w":22,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Medium_Shot_Blue.png",
+	"frame": {"x":25,"y":55,"w":22,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+	"sourceSize": {"w":22,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Medium_Shot_Red.png",
+	"frame": {"x":1,"y":79,"w":22,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+	"sourceSize": {"w":22,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Quad_Short_Straight90.png",
+	"frame": {"x":25,"y":79,"w":29,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":29,"h":22},
+	"sourceSize": {"w":29,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Quad_Short_Straight_Purple90.png",
+	"frame": {"x":1,"y":103,"w":29,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":29,"h":22},
+	"sourceSize": {"w":29,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Quad_Short_Straight_Red90.png",
+	"frame": {"x":32,"y":103,"w":29,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":29,"h":22},
+	"sourceSize": {"w":29,"h":22},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "EnemyBullet.png",
+	"format": "RGBA8888",
+	"size": {"w":64,"h":126},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:ee1f715a7056f68ca47dda70e97e8030:32f3034afc58c349792c669a1790a231:d089346f0d024d9efef72b7b37147ec8$"
+}
+}

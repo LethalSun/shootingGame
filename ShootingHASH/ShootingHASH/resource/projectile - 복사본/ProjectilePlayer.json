@@ -1,0 +1,48 @@
+{"frames": [
+
+{
+	"filename": "Bullet_Level_0.png",
+	"frame": {"x":1,"y":1,"w":45,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":98},
+	"sourceSize": {"w":45,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Bullet_Level_1.png",
+	"frame": {"x":48,"y":1,"w":61,"h":106},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":106},
+	"sourceSize": {"w":61,"h":106},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Bullet_Level_2.png",
+	"frame": {"x":1,"y":109,"w":79,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":79,"h":114},
+	"sourceSize": {"w":79,"h":114},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Bullet_Level_3.png",
+	"frame": {"x":1,"y":225,"w":99,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":130},
+	"sourceSize": {"w":99,"h":130},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ProjectilePlayer.png",
+	"format": "RGBA8888",
+	"size": {"w":110,"h":356},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:29ef8721f32f8aee931505db1c69b441:7f1b318609b074721c099dea48b3e9d7:c5bd475e763dd1bb406ff1d21fa1b47c$"
+}
+}
